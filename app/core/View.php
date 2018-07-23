@@ -55,8 +55,8 @@ class View {
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 				<title>'.$this->title.'</title>
-				<link rel="stylesheet" href="'.ASSETS_PATH.'bootstrap-4.0.0/css/bootstrap.css">
-				<link rel="stylesheet" href="'.ASSETS_PATH.'font-awesome-4.7.0/css/font-awesome.css">
+				<link rel="stylesheet" href="'.CSS_BOOTSTRAP.'">
+				<link rel="stylesheet" href="'.CSS_FONTAWESOME.'">
 				'.$this->customStyle.'
 			</head>
 			<body>
@@ -66,9 +66,9 @@ class View {
 
 	function htmlfoot() {
 		$content = '
-				<script src="'.ASSETS_PATH.'jquery-3.3.1/jquery-3.3.1.min.js"></script>
-				<script src="'.ASSETS_PATH.'tether-1.3.3/js/tether.js"></script>
-				<script src="'.ASSETS_PATH.'bootstrap-4.0.0/js/bootstrap.js"></script>
+				<script src="'.JS_JQUERY.'"></script>
+				<script src="'.JS_TETHER.'"></script>
+				<script src="'.JS_BOOTSTRAP.'"></script>
 				'.$this->customScript.'
 			</body>
 			</html>
