@@ -9,6 +9,13 @@ After cloning this project, follow the following steps to get you started.
 - It is advisable to link libraries like bootstrap and fontawesome from their online CDN
 - You can also create your own local cdn to hold libraries which you can thus be using throughout the period of development.
 
+#Requirement
+[Guzzle](https://docs.guzzlephp.org/en/stable) is a requirement for this project. Please require it from composer.
+
+## What's New
+Changed the curl connection with guzzle.
+
+
 ## Coming soon
 Documentation update
 

@@ -1,12 +1,15 @@
 <?php
 
+use Guzzle\Client;
+
 class Controller {
 	
 	public function main() {
 		echo "Main home page";
 	}
 
-	public function load($url, $request) {
+	// Don't use curl. Use Guzzle instead.
+	/*public function load($url, $request) {
 		$post = [
 			"request" => $request
 		];
@@ -28,5 +31,22 @@ class Controller {
 		// Send the request
 		$result = curl_exec($curl);
 		return $result;
+	}*/
+
+	public function load($url, $request) {
+		$post = [
+			"request" => $request
+		];
+
+		$client = new Client([
+		    'base_uri' => $url,
+		]);
+
+		$response = $client->request('POST', $url, [
+		    'form_params' => $post
+		]);
+
+		return $response->getBody();
 	}
+	
 }

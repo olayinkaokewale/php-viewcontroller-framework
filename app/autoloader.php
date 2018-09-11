@@ -2,6 +2,7 @@
 
 // Set this first!
 const PRODUCTION  = false;
+require 'libs/vendor/autoload.php';
 
 // ================ THS DOES NOT CHANGE =================== //
 define('__ROOTPATH__', dirname(dirname(__FILE__)));
